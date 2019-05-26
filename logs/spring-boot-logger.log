@@ -1,0 +1,863 @@
+2019-05-21 11:16:06,487 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevrepApplication on ANVIP03 with PID 21360 (C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep\target\classes started by ANVIP in C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep)
+2019-05-21 11:16:06,489 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-05-21 11:16:06,490 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-21 11:16:06,500 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2542180e: startup date [Tue May 21 11:16:06 PDT 2019]; root of context hierarchy
+2019-05-21 11:16:08,643 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$31e2d729] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-21 11:16:09,701 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat initialized with port(s): 8003 (http)
+2019-05-21 11:16:09,703 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-05-21 11:16:09,704 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-05-21 11:16:10,078 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-05-21 11:16:10,080 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 3580 ms
+2019-05-21 11:16:10,221 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-21 11:16:10,222 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'metricsFilter' to: [/*]
+2019-05-21 11:16:10,223 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-21 11:16:10,223 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-21 11:16:10,224 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-21 11:16:10,225 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-21 11:16:10,225 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-05-21 11:16:10,226 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-05-21 11:16:10,334 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-05-21 11:16:10,356 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce4406ac0a1e65370584a0b', description='null'}-localhost:27017] Opened connection [connectionId{localValue:3, serverValue:20}] to localhost:27017
+2019-05-21 11:16:10,358 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce4406ac0a1e65370584a0b', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, roundTripTimeNanos=984729}
+2019-05-21 11:16:10,824 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.review.Review> com.org.revrep.web.controller.ReviewReporting.addNewReport(com.org.revrep.web.view.review.Review)
+2019-05-21 11:16:10,825 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.org.revrep.backend.domain.review.ReviewDAO>> com.org.revrep.web.controller.ReviewReporting.getReviews(java.lang.String)
+2019-05-21 11:16:10,827 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/signup],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.registration.SignUpInfo> com.org.revrep.web.controller.SignUpConttoller.signUpUser(com.org.revrep.web.view.registration.SignUpInfo)
+2019-05-21 11:16:10,832 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-21 11:16:10,833 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-21 11:16:10,834 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-21 11:16:10,838 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-21 11:16:10,840 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-21 11:16:11,008 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,011 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-05-21 11:16:11,013 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-05-21 11:16:11,017 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,019 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-05-21 11:16:11,020 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,022 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,024 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-05-21 11:16:11,025 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,027 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-05-21 11:16:11,029 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-05-21 11:16:11,030 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,032 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,034 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,036 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-05-21 11:16:11,038 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,040 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:16:11,150 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-21 11:16:11,300 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2542180e: startup date [Tue May 21 11:16:06 PDT 2019]; root of context hierarchy
+2019-05-21 11:16:11,334 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 11:16:11,335 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 11:16:11,354 INFO org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in restExceptionHandler
+2019-05-21 11:16:11,371 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 11:16:11,580 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-05-21 11:16:11,757 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-05-21 11:16:11,815 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 11:16:11,816 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 11:16:51,824 INFO org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable [kafka-admin-client-thread | adminclient-2] adminclient-2: forcing a hard I/O thread shutdown.  Requests in progress will be aborted.
+2019-05-21 11:16:51,826 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-21 11:16:51,830 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-21 11:16:51,832 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 0
+2019-05-21 11:16:51,836 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-05-21 11:16:51,856 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-05-21 11:16:51,859 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-05-21 11:16:51,862 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-05-21 11:16:51,865 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-05-21 11:16:51,869 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-05-21 11:16:51,872 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-05-21 11:16:51,876 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-05-21 11:16:51,879 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-05-21 11:16:51,882 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-05-21 11:16:51,886 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-05-21 11:16:51,889 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-05-21 11:16:51,891 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 2147483547
+2019-05-21 11:16:51,892 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = review-service
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2019-05-21 11:16:51,905 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 11:16:51,906 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 11:16:51,906 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2019-05-21 11:16:51,907 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 2147483647
+2019-05-21 11:16:51,907 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-05-21 11:16:51,909 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-05-21 11:16:51,925 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$GroupCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Discovered coordinator 4570dc620880:9092 (id: 2147482646 rack: null) for group review-service.
+2019-05-21 11:16:51,926 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Marking the coordinator 4570dc620880:9092 (id: 2147482646 rack: null) dead for group review-service
+2019-05-21 11:16:51,928 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-05-21 11:16:52,005 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat started on port(s): 8003 (http)
+2019-05-21 11:16:52,009 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevrepApplication in 45.673 seconds (JVM running for 1698.895)
+2019-05-21 11:22:55,366 INFO org.springframework.context.support.AbstractApplicationContext [Thread-10] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2542180e: startup date [Tue May 21 11:16:06 PDT 2019]; root of context hierarchy
+2019-05-21 11:22:55,370 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-10] Stopping beans in phase 2147483647
+2019-05-21 11:22:55,371 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-10] Stopping beans in phase 2147483547
+2019-05-21 11:22:55,371 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Shutting down ExecutorService
+2019-05-21 11:22:55,373 INFO org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Consumer stopped
+2019-05-21 11:22:55,374 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-10] Stopping beans in phase 0
+2019-05-21 11:22:55,375 INFO org.springframework.jmx.export.MBeanExporter [Thread-10] Unregistering JMX-exposed beans on shutdown
+2019-05-21 11:22:55,375 INFO org.springframework.jmx.support.MBeanRegistrationSupport [Thread-10] Unregistering JMX-exposed beans
+2019-05-21 11:22:55,376 INFO org.springframework.jmx.export.MBeanExporter [Thread-10] Unregistering JMX-exposed beans on shutdown
+2019-05-21 11:22:56,044 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevrepApplication on ANVIP03 with PID 21360 (C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep\target\classes started by ANVIP in C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep)
+2019-05-21 11:22:56,045 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-05-21 11:22:56,045 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-21 11:22:56,050 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bcf26f6: startup date [Tue May 21 11:22:56 PDT 2019]; root of context hierarchy
+2019-05-21 11:22:57,442 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$31e2d729] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-21 11:22:57,929 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat initialized with port(s): 8003 (http)
+2019-05-21 11:22:57,931 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-05-21 11:22:57,931 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-05-21 11:22:58,205 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-05-21 11:22:58,207 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 2157 ms
+2019-05-21 11:22:58,305 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-21 11:22:58,306 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'metricsFilter' to: [/*]
+2019-05-21 11:22:58,306 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-21 11:22:58,307 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-21 11:22:58,307 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-21 11:22:58,307 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-21 11:22:58,308 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-05-21 11:22:58,308 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-05-21 11:22:58,373 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-05-21 11:22:58,383 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce44202c0a1e65370584a0c', description='null'}-localhost:27017] Opened connection [connectionId{localValue:4, serverValue:21}] to localhost:27017
+2019-05-21 11:22:58,385 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce44202c0a1e65370584a0c', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, roundTripTimeNanos=886304}
+2019-05-21 11:22:58,665 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.review.Review> com.org.revrep.web.controller.ReviewReporting.addNewReport(com.org.revrep.web.view.review.Review)
+2019-05-21 11:22:58,666 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.org.revrep.backend.domain.review.ReviewDAO>> com.org.revrep.web.controller.ReviewReporting.getReviews(java.lang.String)
+2019-05-21 11:22:58,670 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/signup],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.registration.SignUpInfo> com.org.revrep.web.controller.SignUpConttoller.signUpUser(com.org.revrep.web.view.registration.SignUpInfo)
+2019-05-21 11:22:58,673 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-21 11:22:58,674 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-21 11:22:58,675 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-21 11:22:58,677 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-21 11:22:58,678 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-21 11:22:58,758 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,759 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-05-21 11:22:58,761 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-05-21 11:22:58,762 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,764 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-05-21 11:22:58,765 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-05-21 11:22:58,765 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,766 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,769 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,771 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-05-21 11:22:58,772 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,773 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-05-21 11:22:58,774 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,775 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,776 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-05-21 11:22:58,776 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,777 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 11:22:58,830 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-21 11:22:58,933 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bcf26f6: startup date [Tue May 21 11:22:56 PDT 2019]; root of context hierarchy
+2019-05-21 11:22:58,955 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 11:22:58,955 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 11:22:58,971 INFO org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in restExceptionHandler
+2019-05-21 11:22:58,982 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 11:22:59,100 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-05-21 11:22:59,145 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-05-21 11:22:59,153 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 11:22:59,153 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 11:23:41,288 INFO org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable [kafka-admin-client-thread | adminclient-3] adminclient-3: forcing a hard I/O thread shutdown.  Requests in progress will be aborted.
+2019-05-21 11:23:41,289 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-21 11:23:41,293 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-21 11:23:41,294 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 0
+2019-05-21 11:23:41,296 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-05-21 11:23:41,310 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-05-21 11:23:41,312 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-05-21 11:23:41,313 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-05-21 11:23:41,315 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-05-21 11:23:41,317 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-05-21 11:23:41,319 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-05-21 11:23:41,322 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-05-21 11:23:41,324 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-05-21 11:23:41,326 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-05-21 11:23:41,328 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-05-21 11:23:41,331 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-05-21 11:23:41,332 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 2147483547
+2019-05-21 11:23:41,334 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = review-service
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2019-05-21 11:23:41,345 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 11:23:41,345 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 11:23:41,345 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2019-05-21 11:23:41,346 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 2147483647
+2019-05-21 11:23:41,346 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-05-21 11:23:41,347 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-05-21 11:23:41,369 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-05-21 11:23:41,372 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$GroupCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Discovered coordinator 4570dc620880:9092 (id: 2147482646 rack: null) for group review-service.
+2019-05-21 11:23:41,372 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Marking the coordinator 4570dc620880:9092 (id: 2147482646 rack: null) dead for group review-service
+2019-05-21 11:23:41,441 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat started on port(s): 8003 (http)
+2019-05-21 11:23:41,445 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevrepApplication in 45.475 seconds (JVM running for 2108.33)
+2019-05-21 12:03:06,985 INFO org.springframework.context.support.AbstractApplicationContext [Thread-18] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6bcf26f6: startup date [Tue May 21 11:22:56 PDT 2019]; root of context hierarchy
+2019-05-21 12:03:07,009 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-18] Stopping beans in phase 2147483647
+2019-05-21 12:03:07,010 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-18] Stopping beans in phase 2147483547
+2019-05-21 12:03:07,013 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Shutting down ExecutorService
+2019-05-21 12:03:07,017 INFO org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Consumer stopped
+2019-05-21 12:03:07,018 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-18] Stopping beans in phase 0
+2019-05-21 12:03:07,020 INFO org.springframework.jmx.export.MBeanExporter [Thread-18] Unregistering JMX-exposed beans on shutdown
+2019-05-21 12:03:07,021 INFO org.springframework.jmx.support.MBeanRegistrationSupport [Thread-18] Unregistering JMX-exposed beans
+2019-05-21 12:03:07,022 INFO org.springframework.jmx.export.MBeanExporter [Thread-18] Unregistering JMX-exposed beans on shutdown
+2019-05-21 12:03:07,980 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevrepApplication on ANVIP03 with PID 21360 (C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep\target\classes started by ANVIP in C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep)
+2019-05-21 12:03:07,980 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-05-21 12:03:07,981 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-21 12:03:07,988 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a170131: startup date [Tue May 21 12:03:07 PDT 2019]; root of context hierarchy
+2019-05-21 12:03:09,099 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$31e2d729] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-21 12:03:09,543 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat initialized with port(s): 8003 (http)
+2019-05-21 12:03:09,545 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-05-21 12:03:09,546 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-05-21 12:03:09,786 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-05-21 12:03:09,787 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1799 ms
+2019-05-21 12:03:09,868 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-21 12:03:09,869 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'metricsFilter' to: [/*]
+2019-05-21 12:03:09,871 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-21 12:03:09,872 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-21 12:03:09,872 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-21 12:03:09,872 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-21 12:03:09,872 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-05-21 12:03:09,872 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-05-21 12:03:09,946 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-05-21 12:03:09,955 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce44b6dc0a1e65370584a0d', description='null'}-localhost:27017] Opened connection [connectionId{localValue:5, serverValue:22}] to localhost:27017
+2019-05-21 12:03:09,956 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce44b6dc0a1e65370584a0d', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, roundTripTimeNanos=624000}
+2019-05-21 12:03:10,374 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.review.Review> com.org.revrep.web.controller.ReviewReporting.addNewReport(com.org.revrep.web.view.review.Review)
+2019-05-21 12:03:10,376 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.org.revrep.backend.domain.review.ReviewDAO>> com.org.revrep.web.controller.ReviewReporting.getReviews(java.lang.String)
+2019-05-21 12:03:10,378 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/signup],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.registration.SignUpInfo> com.org.revrep.web.controller.SignUpConttoller.signUpUser(com.org.revrep.web.view.registration.SignUpInfo)
+2019-05-21 12:03:10,381 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-21 12:03:10,383 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-21 12:03:10,384 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-21 12:03:10,391 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-21 12:03:10,394 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-21 12:03:10,553 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-05-21 12:03:10,553 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,555 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-05-21 12:03:10,556 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,557 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-05-21 12:03:10,558 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,558 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,559 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-05-21 12:03:10,561 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-05-21 12:03:10,561 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-05-21 12:03:10,562 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,563 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,565 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,566 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-05-21 12:03:10,567 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,569 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,572 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:03:10,653 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-21 12:03:10,768 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a170131: startup date [Tue May 21 12:03:07 PDT 2019]; root of context hierarchy
+2019-05-21 12:03:10,795 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:03:10,796 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:03:10,809 INFO org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in restExceptionHandler
+2019-05-21 12:03:10,823 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:03:10,967 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-05-21 12:03:11,035 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-05-21 12:03:11,047 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 12:03:11,047 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 12:03:51,050 INFO org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable [kafka-admin-client-thread | adminclient-4] adminclient-4: forcing a hard I/O thread shutdown.  Requests in progress will be aborted.
+2019-05-21 12:03:51,052 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-21 12:03:51,058 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-21 12:03:51,060 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 0
+2019-05-21 12:03:51,062 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-05-21 12:03:51,077 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-05-21 12:03:51,079 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-05-21 12:03:51,080 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-05-21 12:03:51,082 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-05-21 12:03:51,084 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-05-21 12:03:51,085 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-05-21 12:03:51,088 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-05-21 12:03:51,090 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-05-21 12:03:51,092 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-05-21 12:03:51,094 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-05-21 12:03:51,096 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-05-21 12:03:51,097 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 2147483547
+2019-05-21 12:03:51,098 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = review-service
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2019-05-21 12:03:51,109 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 12:03:51,109 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 12:03:51,109 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2019-05-21 12:03:51,110 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 2147483647
+2019-05-21 12:03:51,110 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-05-21 12:03:51,112 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-05-21 12:03:51,128 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-05-21 12:03:51,157 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$GroupCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Discovered coordinator 4570dc620880:9092 (id: 2147482646 rack: null) for group review-service.
+2019-05-21 12:03:51,158 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Marking the coordinator 4570dc620880:9092 (id: 2147482646 rack: null) dead for group review-service
+2019-05-21 12:03:51,216 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat started on port(s): 8003 (http)
+2019-05-21 12:03:51,220 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevrepApplication in 43.311 seconds (JVM running for 4518.105)
+2019-05-21 12:06:43,493 INFO org.springframework.context.support.AbstractApplicationContext [Thread-24] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5a170131: startup date [Tue May 21 12:03:07 PDT 2019]; root of context hierarchy
+2019-05-21 12:06:43,496 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-24] Stopping beans in phase 2147483647
+2019-05-21 12:06:43,496 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-24] Stopping beans in phase 2147483547
+2019-05-21 12:06:44,547 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Shutting down ExecutorService
+2019-05-21 12:06:44,548 INFO org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Consumer stopped
+2019-05-21 12:06:44,549 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-24] Stopping beans in phase 0
+2019-05-21 12:06:44,549 INFO org.springframework.jmx.export.MBeanExporter [Thread-24] Unregistering JMX-exposed beans on shutdown
+2019-05-21 12:06:44,550 INFO org.springframework.jmx.support.MBeanRegistrationSupport [Thread-24] Unregistering JMX-exposed beans
+2019-05-21 12:06:44,550 INFO org.springframework.jmx.export.MBeanExporter [Thread-24] Unregistering JMX-exposed beans on shutdown
+2019-05-21 12:06:45,160 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevrepApplication on ANVIP03 with PID 21360 (C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep\target\classes started by ANVIP in C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep)
+2019-05-21 12:06:45,160 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-05-21 12:06:45,161 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-21 12:06:45,165 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7077d38b: startup date [Tue May 21 12:06:45 PDT 2019]; root of context hierarchy
+2019-05-21 12:06:46,142 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$31e2d729] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-21 12:06:46,470 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat initialized with port(s): 8003 (http)
+2019-05-21 12:06:46,470 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-05-21 12:06:46,471 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-05-21 12:06:46,679 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-05-21 12:06:46,680 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 1515 ms
+2019-05-21 12:06:46,747 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-21 12:06:46,748 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'metricsFilter' to: [/*]
+2019-05-21 12:06:46,748 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-21 12:06:46,748 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-21 12:06:46,749 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-21 12:06:46,749 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-21 12:06:46,750 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-05-21 12:06:46,750 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-05-21 12:06:46,812 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-05-21 12:06:46,820 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce44c46c0a1e65370584a0e', description='null'}-localhost:27017] Opened connection [connectionId{localValue:6, serverValue:23}] to localhost:27017
+2019-05-21 12:06:46,820 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce44c46c0a1e65370584a0e', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, roundTripTimeNanos=512485}
+2019-05-21 12:06:47,095 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.review.Review> com.org.revrep.web.controller.ReviewReporting.addNewReport(com.org.revrep.web.view.review.Review)
+2019-05-21 12:06:47,096 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.org.revrep.backend.domain.review.ReviewDAO>> com.org.revrep.web.controller.ReviewReporting.getReviews(java.lang.String)
+2019-05-21 12:06:47,097 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/signup],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.registration.SignUpInfo> com.org.revrep.web.controller.SignUpConttoller.signUpUser(com.org.revrep.web.view.registration.SignUpInfo)
+2019-05-21 12:06:47,100 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-21 12:06:47,100 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-21 12:06:47,101 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-21 12:06:47,106 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-21 12:06:47,107 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-21 12:06:47,191 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-05-21 12:06:47,192 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,193 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-05-21 12:06:47,195 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-05-21 12:06:47,195 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,196 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,197 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-05-21 12:06:47,198 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,199 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-05-21 12:06:47,199 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-05-21 12:06:47,200 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,201 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,201 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,203 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-05-21 12:06:47,205 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,206 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,207 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:06:47,251 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-21 12:06:47,329 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7077d38b: startup date [Tue May 21 12:06:45 PDT 2019]; root of context hierarchy
+2019-05-21 12:06:47,351 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:06:47,352 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:06:47,367 INFO org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in restExceptionHandler
+2019-05-21 12:06:47,380 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:06:47,485 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-05-21 12:06:47,536 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-05-21 12:06:47,545 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 12:06:47,546 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 12:07:00,768 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting RevrepApplication on ANVIP03 with PID 10220 (C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep\target\classes started by ANVIP in C:\Users\ANVIP\Old-workspaces\Users\anvip\eclipse-workspace\revrep)
+2019-05-21 12:07:00,772 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain] Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-05-21 12:07:00,773 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2019-05-21 12:07:00,902 INFO org.springframework.context.support.AbstractApplicationContext [restartedMain] Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a31d64: startup date [Tue May 21 12:07:00 PDT 2019]; root of context hierarchy
+2019-05-21 12:07:01,333 INFO org.hibernate.validator.internal.util.Version [background-preinit] HV000001: Hibernate Validator 5.3.6.Final
+2019-05-21 12:07:04,189 INFO org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a119e23c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-21 12:07:05,504 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat initialized with port(s): 8003 (http)
+2019-05-21 12:07:05,530 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8003"]
+2019-05-21 12:07:05,555 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2019-05-21 12:07:05,558 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-05-21 12:07:06,012 INFO org.apache.juli.logging.DirectJDKLog [localhost-startStop-1] Initializing Spring embedded WebApplicationContext
+2019-05-21 12:07:06,013 INFO org.springframework.boot.context.embedded.EmbeddedWebApplicationContext [localhost-startStop-1] Root WebApplicationContext: initialization completed in 5111 ms
+2019-05-21 12:07:06,528 INFO org.springframework.boot.web.servlet.ServletRegistrationBean [localhost-startStop-1] Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-21 12:07:06,532 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'metricsFilter' to: [/*]
+2019-05-21 12:07:06,533 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-21 12:07:06,533 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-21 12:07:06,534 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-21 12:07:06,535 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-21 12:07:06,535 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-05-21 12:07:06,535 INFO org.springframework.boot.web.servlet.AbstractFilterRegistrationBean [localhost-startStop-1] Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-05-21 12:07:08,000 INFO com.mongodb.diagnostics.logging.SLF4JLogger [restartedMain] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2019-05-21 12:07:08,091 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce44c5bc0a1e627ecedc6e1', description='null'}-localhost:27017] Opened connection [connectionId{localValue:1, serverValue:24}] to localhost:27017
+2019-05-21 12:07:08,093 INFO com.mongodb.diagnostics.logging.SLF4JLogger [cluster-ClusterId{value='5ce44c5bc0a1e627ecedc6e1', description='null'}-localhost:27017] Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 0, 9]}, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, roundTripTimeNanos=973577}
+2019-05-21 12:07:09,854 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.review.Review> com.org.revrep.web.controller.ReviewReporting.addNewReport(com.org.revrep.web.view.review.Review)
+2019-05-21 12:07:09,858 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/review],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.util.List<com.org.revrep.backend.domain.review.ReviewDAO>> com.org.revrep.web.controller.ReviewReporting.getReviews(java.lang.String)
+2019-05-21 12:07:09,861 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/signup],methods=[POST]}" onto public org.springframework.http.ResponseEntity<com.org.revrep.web.view.registration.SignUpInfo> com.org.revrep.web.controller.SignUpConttoller.signUpUser(com.org.revrep.web.view.registration.SignUpInfo)
+2019-05-21 12:07:09,871 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-21 12:07:09,875 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-21 12:07:09,877 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-21 12:07:09,885 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-21 12:07:09,887 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-21 12:07:10,428 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,430 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,432 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-05-21 12:07:10,434 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,435 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-05-21 12:07:10,438 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,441 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-05-21 12:07:10,443 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-05-21 12:07:10,444 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,447 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-05-21 12:07:10,450 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,452 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,454 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,458 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-05-21 12:07:10,459 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-05-21 12:07:10,460 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,461 INFO org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry [restartedMain] Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-21 12:07:10,861 INFO springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping [restartedMain] Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-21 12:07:11,426 INFO org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [restartedMain] Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a31d64: startup date [Tue May 21 12:07:00 PDT 2019]; root of context hierarchy
+2019-05-21 12:07:11,562 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:07:11,563 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:07:11,607 INFO org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [restartedMain] Detected @ExceptionHandler methods in restExceptionHandler
+2019-05-21 12:07:11,684 INFO org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [restartedMain] Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-21 12:07:12,359 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2019-05-21 12:07:12,556 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] AdminClientConfig values: 
+	bootstrap.servers = [localhost:9092]
+	client.id = 
+	connections.max.idle.ms = 300000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 120000
+	retries = 5
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2019-05-21 12:07:12,687 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 12:07:12,687 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 12:07:52,696 INFO org.apache.kafka.clients.admin.KafkaAdminClient$AdminClientRunnable [kafka-admin-client-thread | adminclient-1] adminclient-1: forcing a hard I/O thread shutdown.  Requests in progress will be aborted.
+2019-05-21 12:07:52,699 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-21 12:07:52,705 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Registering beans for JMX exposure on startup
+2019-05-21 12:07:52,710 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 0
+2019-05-21 12:07:52,714 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'auditEventsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=auditEventsEndpoint]
+2019-05-21 12:07:52,759 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2019-05-21 12:07:52,787 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2019-05-21 12:07:52,798 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2019-05-21 12:07:52,804 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2019-05-21 12:07:52,812 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2019-05-21 12:07:52,818 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'loggersEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=loggersEndpoint]
+2019-05-21 12:07:52,830 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2019-05-21 12:07:52,834 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2019-05-21 12:07:52,838 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2019-05-21 12:07:52,842 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'autoConfigurationReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationReportEndpoint]
+2019-05-21 12:07:52,850 INFO org.springframework.jmx.export.MBeanExporter [restartedMain] Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2019-05-21 12:07:52,853 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 2147483547
+2019-05-21 12:07:52,873 INFO org.apache.kafka.common.config.AbstractConfig [restartedMain] ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = review-service
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	internal.leave.group.on.close = true
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.springframework.kafka.support.serializer.JsonDeserializer
+
+2019-05-21 12:07:52,950 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka version : 0.11.0.2
+2019-05-21 12:07:52,951 INFO org.apache.kafka.common.utils.AppInfoParser$AppInfo [restartedMain] Kafka commitId : 73be1e1168f91ee2
+2019-05-21 12:07:52,957 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [restartedMain] Initializing ExecutorService
+2019-05-21 12:07:52,964 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [restartedMain] Starting beans in phase 2147483647
+2019-05-21 12:07:52,965 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2019-05-21 12:07:52,995 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator$GroupCoordinatorResponseHandler [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Discovered coordinator 4570dc620880:9092 (id: 2147482646 rack: null) for group review-service.
+2019-05-21 12:07:52,996 INFO org.apache.kafka.clients.consumer.internals.AbstractCoordinator [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Marking the coordinator 4570dc620880:9092 (id: 2147482646 rack: null) dead for group review-service
+2019-05-21 12:07:53,024 INFO springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2019-05-21 12:07:53,120 INFO springfox.documentation.spring.web.scanners.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2019-05-21 12:07:53,445 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8003"]
+2019-05-21 12:07:53,473 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Using a shared selector for servlet write/read
+2019-05-21 12:07:53,531 INFO org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer [restartedMain] Tomcat started on port(s): 8003 (http)
+2019-05-21 12:07:53,546 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started RevrepApplication in 53.416 seconds (JVM running for 54.743)
+2019-05-21 12:09:10,631 INFO org.springframework.context.support.AbstractApplicationContext [Thread-6] Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@32a31d64: startup date [Tue May 21 12:07:00 PDT 2019]; root of context hierarchy
+2019-05-21 12:09:10,635 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-6] Stopping beans in phase 2147483647
+2019-05-21 12:09:10,637 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-6] Stopping beans in phase 2147483547
+2019-05-21 12:09:10,642 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Shutting down ExecutorService
+2019-05-21 12:09:10,646 INFO org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] Consumer stopped
+2019-05-21 12:09:10,648 INFO org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup [Thread-6] Stopping beans in phase 0
+2019-05-21 12:09:10,650 INFO org.springframework.jmx.export.MBeanExporter [Thread-6] Unregistering JMX-exposed beans on shutdown
+2019-05-21 12:09:10,652 INFO org.springframework.jmx.support.MBeanRegistrationSupport [Thread-6] Unregistering JMX-exposed beans
+2019-05-21 12:09:10,654 INFO org.springframework.jmx.export.MBeanExporter [Thread-6] Unregistering JMX-exposed beans on shutdown
