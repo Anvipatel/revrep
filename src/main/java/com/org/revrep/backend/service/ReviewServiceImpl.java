@@ -52,6 +52,7 @@ public class ReviewServiceImpl implements IReviewService {
 	@Override
 	public List<Review> getReviews(String prodId) {
 		List<ReviewDAO> reviewDaos = reviewRepo.findByProductId(prodId);
+		log.info("Get Reviews returning reviews count : "+ reviewDaos.size());
 		List<Review> reviews = new ArrayList<>();
 		for (ReviewDAO rev : reviewDaos) {
 			reviews.add(reviewInfoToReviewForm.convert(rev));
@@ -74,11 +75,12 @@ public class ReviewServiceImpl implements IReviewService {
 	public void registerReviewLikes(String reviewId) {
 		log.info("Register review like service start");
 		ReviewDAO reviewDao = reviewRepo.findOne(reviewId);
-		log.info(reviewDao.getTitle());
-		log.info(String.valueOf(reviewDao.getLikes()));
+		
 		if (Objects.isNull(reviewDao)) {
 			throw new BusinessValidationException("Error Review doesn't exist");
 		}
+		log.info(reviewDao.getTitle());
+		log.info(String.valueOf(reviewDao.getLikes()));
 		long like_cnt = reviewDao.getLikes();
 		reviewDao.setLikes(like_cnt + 1);
 		reviewRepo.save(reviewDao);

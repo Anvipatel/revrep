@@ -5,7 +5,7 @@ echo "y" | docker system prune
 
 #pull dependent tools docker images
 echo "pull docker image for kafka/zookeeper"
-docker pull bitnami/kafka
+docker pull spotify/kafka
 
 echo "pull docker image for kafka/zookeeper"
 docker pull mongo

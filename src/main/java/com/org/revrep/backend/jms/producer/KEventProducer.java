@@ -7,8 +7,9 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 
-import com.org.revrep.backend.domain.dao.ReviewDAO;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Component
 public class KEventProducer {
 
@@ -20,10 +21,10 @@ public class KEventProducer {
 		if (StringUtils.isEmpty(topic) || Objects.isNull(messageToDrop)) {
 			return;
 		}
-
+		log.info("publishing message -- " + topic);
 		System.out.println("publishing message -- " + topic);
 		kafkaTemplate.send(topic, messageToDrop);
-
+		log.info("message published! -- " + topic);
 		System.out.println("message published! -- " + topic);
 	}
 }
