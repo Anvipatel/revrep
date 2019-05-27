@@ -3,8 +3,14 @@
 iptables -F
 echo "y" | docker system prune
 
-cd $HOME/revrep
+#pull dependent tools docker images
+echo "pull docker image for kafka/zookeeper"
+docker pull bitnami/kafka
 
+echo "pull docker image for kafka/zookeeper"
+docker pull mongo
+
+cd $HOME/revrep
 
 echo "Running MongoDB"
 docker run -p 27017:27017 mongo:latest &
@@ -24,7 +30,7 @@ docker build -t revrep .
 echo "Renaming docker image"
 docker tag revrep:latest revrep:v1.0
 
-echo "Creating a network"
+#echo "Creating a network"
 #docker network create app-tier --driver bridge
 
 

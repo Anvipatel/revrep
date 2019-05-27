@@ -27,8 +27,6 @@ public class ReviewReportingController implements IReviewController {
 	@Autowired
 	private ApplicationEventPublisher eventPublisher;
 
-	// private Logger logger = LoggerFactory.getLogger(this.getClass());
-
 	@Override
 	public ResponseEntity<Review> addNewReport(Review review) {
 		Review newReview = reviewService.addNewReview(review);

@@ -35,7 +35,7 @@ public class ReviewReporting {
 	@Autowired
 	IReviewController reviewController;
 
-	@ApiOperation(value = "Add new Review", response = Review.class)
+	@ApiOperation(value = "Used to add new Review", response = Review.class)
 	@ApiResponses(value = {
 			@ApiResponse(code = HttpURLConnection.HTTP_BAD_REQUEST, message = "Bad Request", response = RestExceptionHandler.class),
 			@ApiResponse(code = HttpURLConnection.HTTP_UNAVAILABLE, message = "Service Unavailable", response = RestExceptionHandler.class) })
@@ -47,6 +47,7 @@ public class ReviewReporting {
 
 	}
 
+	@ApiOperation(value = "Used to get List of Reviews for a product")
 	@GetMapping
 	public ResponseEntity<List<Review>> getReviews(
 			@RequestParam(value = "productId") @ApiParam(value = "String ProductId", required = true) String productId,
@@ -60,6 +61,10 @@ public class ReviewReporting {
 		return reviewController.getReviewsByPage(productId, pageable);
 	}
 
+	@ApiOperation(value = "Used to register a like sentiment for an existing review")
+	@ApiResponses(value = {
+			@ApiResponse(code = HttpURLConnection.HTTP_BAD_REQUEST, message = "Invalid input reviewId", response = RestExceptionHandler.class),
+			@ApiResponse(code = HttpURLConnection.HTTP_UNAVAILABLE, message = "Service Unavailable", response = RestExceptionHandler.class) })	
 	@PostMapping("/like")
 	public ResponseEntity<Void> registerReviewLikes(@RequestParam(value = "reviewId") String reviewId) {
 		try {
